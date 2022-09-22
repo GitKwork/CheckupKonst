@@ -20,15 +20,20 @@ public class Main {
         students.add(student4);
         students.add(student5);
 
-        pillows.put("Уголь", 100000);
-        pillows.put("Аспирин", 10);
-        pillows.put("Зеленка", 100);
+//        pillows.put("Уголь", 100000);
+//        pillows.put("Аспирин", 10);
+//        pillows.put("Зеленка", 100);
 
 
 
         Nurse nurse = new Nurse(students, pillows);
 
-        nurse.goToCheckup(nurse.getStudents());
+        nurse.goToCheckup();
+        System.out.println(nurse.getStudents());
+        nurse.goToMeasuringMansHeight();
+        System.out.println(nurse.getStudents());
+        nurse.addToGrowthAccountingBook();
+        System.out.println(nurse.getStudents());
     }
 
 }

@@ -2,5 +2,11 @@ import java.util.ArrayList;
 
 public interface Speaker {
 
-    void goToCheckup(ArrayList<Student> students);
+    void goToCheckup();
+
+    void goToMeasuringMansHeight();
+
+    void measuringMansHeight(Student student);
+
+    void addToGrowthAccountingBook();
 }

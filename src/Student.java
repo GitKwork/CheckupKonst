@@ -2,11 +2,13 @@ public class Student {
     private String name;
     private int age;
     private boolean illness;
+    private int height;
 
     public Student(String name, int age, boolean illness) {
         this.name = name;
         this.age = age;
         this.illness = illness;
+        this.height = 0;
     }
 
     public String getName() {
@@ -23,6 +25,14 @@ public class Student {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
     }
 
     public boolean isIllness() {
